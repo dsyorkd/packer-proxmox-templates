@@ -1,0 +1,22 @@
+*.img
+*.bz2
+*.qcow2
+*.log
+*.log.*
+.DS_Store
+
+# ignore directories
+test/
+roles/
+crash_logs/
+
+# ignore packer_cache
+packer_cache
+output-qemu
+packer-qemu
+
+# created from template
+preseed.cfg
+
+# others
+cloud-config.yml
