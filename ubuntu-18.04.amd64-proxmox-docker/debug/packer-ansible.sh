@@ -6,7 +6,7 @@ ansible-playbook /root/packer-projects/ubuntu-18.04-amd64-proxmox/playbook/serve
     --extra-vars
       packer_build_name=proxmox
       packer_builder_type=proxmox
-      packer_http_addr=217.79.184.184:8320
-      vm_default_user=chris
+      packer_http_addr=10.100.0.45:8320
+      vm_default_user=syork
       ansible_ssh_private_key_file=/tmp/ansible-key088836676
     -o IdentitiesOnly=yes # SSH option

@@ -37,6 +37,7 @@ source $build_conf
 [[ -z "$iso_sha256_url" ]] && die_var_unset "iso_sha256_url"
 [[ -z "$iso_directory" ]] && die_var_unset "iso_directory"
 
+echo $vm_default_user
 ## check that build-mode (proxmox|debug) is passed to script
 target=${1:-}
 [[ "${1}" == "proxmox" ]] || [[ "${1}" == "debug" ]] || help
